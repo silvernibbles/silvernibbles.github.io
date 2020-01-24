@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+  .demo{
+  color:red;
+  background-color:green;
+  height:400px;
+  
+}
+  </style>
+<script>
+  function print_thing() {
+alert("test")
+var button_name = "thing"
+
+button = document.querySelector(".demo")
+button.innerText = button_name
+}
+
+</script>
+
+</head>
+<body>
+  <button class="demo" onclick="print_thing()">test</button>
+  <button class="demo" onclick="print_thing()">test</button>
+  <button onclick="print_thing()">test</button>
+
+  </body>
+</html>
