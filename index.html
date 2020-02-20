@@ -1,33 +1,59 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-  <style>
-  .demo{
-  color:red;
-  background-color:green;
-  height:400px;
-  
-}
-  </style>
-<script>
-  function print_thing() {
-alert("test")
-var button_name = "thing"
-
-button = document.querySelector(".demo")
-button.innerText = button_name
-}
-
-</script>
-
+    <script src="./main.js"></script>
+    <link rel="stylesheet" type="text/css" href="./main.css" />
 </head>
-<body>
-  <button class="demo" onclick="print_thing()">test</button>
-  <button class="demo" onclick="print_thing()">test</button>
-  <button onclick="print_thing()">test</button>
+<body onload="hide()">
+    <button onclick="reset()" ; id="reset" ;>Reset</button>
+    <div class="buttons">
+        <button onclick="buttonOne()" ; class="button" ; id="dope">Dopamine</button>
+        <button onclick="buttonTwo()" ; class="button" ; id="adr">Adrenaline</button>
+        <button onclick="buttonThree()" ; class="button" ; id="nora">Noradrenaline</button>
+        <button onclick="buttonFour()" ; class="button" ; id="endo">Endorphins</button>
+        <button onclick="buttonFive()" ; class="button" ; id="oxy">Oxycontin</button>
+        <button onclick="buttonSix()" ; class="button" ; id="mel">Melatonin</button>
+        <button onclick="buttonSeven()" ; class="button" ; id="sero">Serotonin</button>
+    </div>
+    <p id="mainText">Current Emotional Status:</p>
+    <p id="subText">Click the chemical buttons to find emotions</p>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>JS Bin</title>
+    </head>
+    <body id="backColor" style="background-color:white;">
+        <img id="img" src="https://www.evolvefish.com/assets/images/Decals/EF-VDC-00035(Black).jpg" alt="Metal cube" width="300" height="300">
+        <p id="imgDis"> Find love before time runs out. </p>
+        <div class="bars">
+            <div id="barOne" ; class="bar one">0%</div>
+            <div id="barTwo" ; class="bar two">0%</div>
+            <div id="barThree" ; class="bar three">0%</div>
+            <div id="barFour" ; class="bar four">0%</div>
+            <div id="barFive" ; class="bar five">0%</div>
+            <div id="barSix" ; class="bar six">0%</div>
+            <div id="barSeven" ; class="bar seven">0%</div>
+        </div>
+        <p id="timer"> Timer: 1E1000 years </p>
+        <p id="array"> 0,0,0,0,0,0,0 </p>
+        <button id="give" onclick="hide()">I give up (I'm that bad a pressing buttons)</button>
 
-  </body>
+        <div id="hideme">
+            <button class="hidebutton" ; onclick="epilepsy()" ; id="epil" ;>VaporWave</button>
+            <button class="hidebutton" ; onclick="forceMania()" ; id="mani" ;>Mania</button>
+            <button class="hidebutton" ; onclick="forceAnger()" ; id="ange" ;>Anger</button>
+            <button class="hidebutton" ; onclick="forceLove()" ; id="love" ;>Love</button>
+            <button class="hidebutton" ; onclick="forceStress()" ; id="stre" ;>Stress</button>
+            <button class="hidebutton" ; onclick="forceDepression()" ; id="depr" ;>Depression</button>
+            <button class="hidebutton" ; onclick="forceHappy()" ; id="happ" ;>Happy</button>
+            <button class="hidebutton" ; onclick="forceEuphoria()" ; id="euph" ;>Euphoria</button>
+            <button class="hidebutton" ; onclick="forceApathy()" ; id="apat" ;>Apathy</button>
+            <button class="hidebutton" ; onclick="forceSurprise()" ; id="surp" ;>Surprise</button>
+            <button class="hidebutton" ; onclick="forceImpulsive()" ; id="impu" ;>Impulsive</button>
+        </div>
+
+    </body>
+    <svg width="1000" height="100">
+
+    </svg>
 </html>
